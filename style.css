@@ -16,6 +16,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .logo img {
@@ -69,6 +70,7 @@ video {
   transition: background-color 0.5s ease-in-out;
   color: black;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 #navbar.scrolled {
