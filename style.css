@@ -1,3 +1,5 @@
+/* Add this to your CSS file */
+
 /* Reset default margin and padding */
 * {
   margin: 0;
@@ -8,33 +10,99 @@
 body {
   font-family: Rajdhani, sans-serif;
   overflow-x: hidden;
+  /* background-image: url(/img/bgabout.jpg); */
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  padding: 15px;
 }
 
 .logo img {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
 }
 
 .logo {
   display: flex;
+  margin-top: 10px;
 }
 
 .logo-text {
-  margin-top: 15px;
+  margin-top: -2px;
   margin-left: 15px;
   margin-right: 10px;
 }
 
-.logo-text h2::after {
-  display: block;
-  content: "UPNVYK";
-  margin-top: -10px;
+.logo-text h2 {
+  font-size: 20px;
+  max-width: 100px;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 50%;
+}
+
+#home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+#navbar {
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+  color: white;
+}
+
+#navbar.scrolled {
+  background-color: white;
+  color: black;
+}
+
+.text-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-self: center;
+  position: absolute;
+  color: white;
+  z-index: 2;
+  text-align: center;
+  align-items: center;
+}
+
+.typing {
+  color: white;
+  border-right: 0.01rem solid rgb(0, 0, 0);
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  animation: typing 6s steps(30, end) forwards infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
 }
 
 .carousel-item {
@@ -94,54 +162,90 @@ footer {
 }
 
 main {
-  padding-bottom: 100px;
-  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-/*
-
-.menu-toggle {
-  cursor: pointer;
-  display: none; 
+.elementor-shape-fill {
+  fill: #228b22; /* Forest green */
 }
 
-.menu-toggle .bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 5px 0;
-  transition: 0.4s;
+#main-wave,
+#main-wave2 .elementor-shape-fill {
+  fill: #228b22;
 }
 
-.nav-list {
+#main-wave2 {
+  margin-top: -5px;
+}
+
+#main-wave {
+  transform: rotateX(180deg);
+  margin-bottom: -5px;
+}
+
+#footer-wave .elementor-shape-fill {
+  fill: #091d3f;
+}
+
+#footer-wave {
+  transform: rotateX(180deg);
+  margin-bottom: -5px;
+}
+
+.btn-floating:hover {
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+footer .social-icon,
+footer .menu {
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
 }
 
-.nav-list li {
-  list-style-type: none;
-  margin-right: 10px;
+footer .social-icon li,
+footer .menu li {
+  list-style: none;
 }
 
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block; 
-  }
+footer .menu,
+footer .social-icon {
+  width: 400px;
+  position: relative;
+  left: -15px;
+}
 
-  .nav-list {
-    display: none; 
-    flex-direction: column;
-    background-color: #f8f9fa; 
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 10px 20px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
+footer .social-icon li a,
+footer .menu li a {
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
 
-  .nav-list.active {
-    display: flex; 
-  }
-} */
+footer .social-icon li a:hover {
+  transform: translateY(-10px);
+}
+
+footer .menu li a {
+  font-size: 1em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer ion-icon {
+  font-size: 2em;
+}

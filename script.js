@@ -1,6 +1,14 @@
-const menuToggle = document.getElementById("mobile-menu");
-const menuList = document.querySelector(".nav-list");
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.getElementById("navbar");
 
-menuToggle.addEventListener("click", () => {
-  menuList.classList.toggle("active");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+      navbar.classList.remove("navbar-dark");
+      navbar.classList.add("navbar-light");
+    } else {
+      navbar.classList.add("navbar-dark");
+      navbar.classList.remove("scrolled");
+    }
+  });
 });
