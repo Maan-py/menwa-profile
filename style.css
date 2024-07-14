@@ -68,7 +68,7 @@ video {
   background-color: transparent;
   transition: background-color 0.5s ease-in-out;
   color: black;
-
+  width: 100vw;
 }
 
 #navbar.scrolled {
