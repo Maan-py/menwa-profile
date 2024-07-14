@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
       navbar.classList.remove("navbar-dark");
       navbar.classList.add("navbar-light");
     } else {
-      navbar.classList.add("navbar-dark");
       navbar.classList.remove("scrolled");
     }
   });

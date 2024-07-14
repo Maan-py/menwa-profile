@@ -52,7 +52,7 @@ video {
   width: 100%;
 }
 
-#home::before {
+/* #home::before {
   content: "";
   position: absolute;
   top: 0;
@@ -61,17 +61,20 @@ video {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
-}
+} */
 
 #navbar {
+  padding-right: 15px;
   background-color: transparent;
   transition: background-color 0.5s ease-in-out;
-  color: white;
+  color: black;
+
 }
 
 #navbar.scrolled {
   background-color: white;
   color: black;
+  text-shadow: none;
 }
 
 .text-container {
@@ -94,6 +97,11 @@ video {
   overflow: hidden;
   text-align: center;
   animation: typing 6s steps(30, end) forwards infinite;
+  text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
+}
+
+.top-welcome {
+  text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
 }
 
 @keyframes typing {
