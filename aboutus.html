@@ -1,89 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Menwa | UPNYK</title>
+    <link rel="shortcut icon" href="img/upn.png" type="image/x-icon">
+    <!-- Booststrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="aboutus.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    <!--Header Start-->
-    <header>
-        <nav>
-            <div class="images">
-                <img src="img/upn.png" alt="Logo Upn" class="logo">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div class="logo">
+                <img class="upn" src="img/logo-menwa.png" alt="UPNVY">
+                <div class="logo-text">
+                    <h2>
+                        RESIMEN MAHASISWA UPNVYK
+                    </h2>
+                </div>
             </div>
-            <div class="menwa">
-                <h2>MENWA UPNVYK</h2>
-            </div>
-            <button class="toggle-button" id="toggle-button">
-                ☰
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-links" id="navbar-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#visi">Visi</a></li>
-                    <li><a href="#misi">Misi</a></li>
-                    <li><a href="#kontak">Contact</a></li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kegiatan">Kegiatan</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
-    </header>
-    <!--Header End-->
-
-    <!--Main Start-->
+        </div>
+    </nav>
     <main>
-        <section class="container-paragraf">
-            <div class="paragraf1">
-                <img class="menwa2" src="img/slider1.jpeg" alt="">
-                <p><strong>About Us</strong></p>
+        <h1>About Us</h1>
+    </main>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary">
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            Content
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Company name
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div> -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#home" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="aboutus.html" class="text-reset">About Us</a>
+                        </p>
+                        <p>
+                            <a href="#kegiatan" class="text-reset">Kegiatan</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Address</h6>
+                        <p><i class="fas fa-home me-3"></i>Lokasi Kampus Pusat :
+                            Jl. SWK 104 (Lingkar Utara), Condongcatur, Depok, Sleman, Yogyakarta 55283.</p>
+                        <p><i class="fas fa-home me-3"></i>Alamat Markas Komando :
+                            Jl. Padjajaran, Jl. Ring Road Utara, Ngropoh, Condongcatur, Kec. Depok, Kabupaten Sleman,
+                            Daerah Istimewa Yogyakarta
+                            55283.</p>
+                    </div>
+                </div>
+                <!-- Grid row -->
             </div>
         </section>
-
-        <section>
-            <ul>
-                <p id="visi"><strong>VISI</strong></p><hr>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <p id="misi"><strong>MISI</strong></p><hr>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+        <section class="justify-content-center">
+            <ul class="social-icon">
+                <li><a href="https://www.youtube.com/@menwaupnvyk9655?si=iQ4tGp_rJyWpeyNK" target="_blank"><ion-icon
+                            name="logo-youtube" role="img" class="md hydrated" aria-label="logo youtube"></ion-icon></a>
+                </li>
+                <li><a href="#" target="_blank"><ion-icon name="logo-facebook" role="img" class="md hydrated"
+                            aria-label="logo facebook"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/menwaupnvy" target="_blank"><ion-icon name="logo-instagram"
+                            role="img" class="md hydrated" aria-label="logo instagram"></ion-icon></a></li>
+                <li><a href="https://www.tiktok.com/@menwaupnvy?_t=8nebYRvYzSs&_r=1"><ion-icon name="logo-tiktok"
+                            role="img" class="md hydrated" aria-label="logo tiktok"></ion-icon></a></li>
             </ul>
         </section>
 
-    </main>
-    <!--Main End-->
-    <footer>
-        <section class="container-footer">
-            
-            <div class="text">
-                <h3>MENWA</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum rem culpa consequatur nostrum facilis doloribus nesciunt molestiae aliquid eveniet, quas laborum totam illo magni reiciendis.</p>
-            </div>
-            
-            <div class="alamat">
-                <h3>Address</h3>
-                <span>Jl. Padjajaran Condong Catur, Yogyakarta.</span>
-            </div>
-
-            <div id="kontak"class="contact">
-                <h3>Contact</h3>
-                <ul>
-                    <li><img src="img/instagram.png" alt="">wvnwni</li>
-                    <li><img src="img/mail.png" alt=""> menwa</li>
-                    <li><img src="img/phone-call.png" alt="">+62</li>
-                </ul>
-            </div>
-
-                
-        </section>
+        <div class="text-center p-4">
+            © 2024 MENWA UPNVYK
+        </div>
     </footer>
-    <script src="aboutus.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
