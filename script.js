@@ -12,6 +12,41 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarHeight = document.querySelector("#navbar").offsetHeight;
+  const links = document.querySelectorAll(".nav-link");
+
+  links.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      const targetId = this.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        event.preventDefault();
+        window.scrollTo({
+          top: targetElement.offsetTop - navbarHeight,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var navLinks = document.querySelectorAll(".navbar-nav a");
+  var navbarCollapse = document.getElementById("navbarSupportedContent");
+
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (navbarCollapse.classList.contains("show")) {
+        var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: true,
+        });
+      }
+    });
+  });
+});
+
 //step 1: get DOM
 let nextDom = document.getElementById("next");
 let prevDom = document.getElementById("prev");
